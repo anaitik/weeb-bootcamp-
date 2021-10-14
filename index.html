@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weeb Bootcamp</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Weeb Bootcamp</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#watch" class="nav-link">What You'll watch</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Become a <span class="text-warning"> Anime Weeb</span></h1>
+            <p class="lead my-4">
+              We focus on teaching our students the fundamentals of the latest
+              and greatest animes and how to handle its intense power.
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start The Enrollment
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="1200px-Anime_stub.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign up for community letter    </h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="card-text">
+                 classes will be taken by our finest members of our weeb community
+                 
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="card-text">
+                  even better than our virtual program 
+                  guidance in person from anime experts themselves
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">In Person</h3>
+                <p class="card-text">
+               one on one tuition to the students who are still noob at animes 
+               we make them naruto of the real world
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals</h2>
+            <p class="lead">
+             
+              learn the basic fundamentals
+            </p>
+            <p>
+              to get ready from the team you have to learn from seniors as well as the leaders 
+              we make you world ready with some of the best industry entertainment as well as the 
+              hidden gems 
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>learn advanced anime watching tactics</h2>
+            <p class="lead">
+              
+             
+              "Those who do not understand true pain can never understand true peace"
+            -pain
+            </p>
+            <p>
+              some like anime ,some like hentai ,with us you can learn to watch anime for longer
+              hours without break
+            
+            
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="download(3).jfif" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Where exactly are you located?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+          we are everywhere.our headquaters is currently located in santa monica ,california . 
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                What do I need to Know?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+           if you are a noob .it doesnt matter with us you will become a master weeber in no time.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How Do I sign up?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                leave your email and we will contact you personally
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+          Our instructors all have 5+ years experience of watcing anime and are all hokages in their genres 
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://i.quotev.com/ypnnexiutcca.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">ochaka sensei</h3>
+                <p class="card-text">
+                  master of adventure gnere.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIYbzMkn7TYXMgj5XwB89FnOI6qv4xcNT1iNkRB6ztBf1I0tb6h2HCRg_ZQitD8mYX4PE&usqp=CAU"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">kimi noah</h3>
+
+                <p class="card-text">
+                  just useless like sakura.caant do anything bad sensei
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Manish</h3>
+                <p class="card-text">
+               masters in anime watching from hokage institute of technology ,
+               cant match his speed of watching
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">gaurav</h3>
+                <p class="card-text">
+                 
+                 our weeb is expert in sad and really sad genre
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> pappu bhaiya k dukan k peeche
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone:</span> (5550)858
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Phone:</span> 586325666
+                23
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> (555)
+                enroll@shrekbc.test
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span>
+                student@hokagebc.test
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">anime bootcamp</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      })
+    </script>
+  </body>
+</html>
